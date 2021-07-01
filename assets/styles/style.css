@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #3E3E3E;
+    text-align: center;
+    color: #B3A78C;
+}
+
+.jumbotron p {
+    margin-top: -20px;
+    font-size: 20px;
+    letter-spacing: 10px;
+    /* font-style: italic; */
+}
+
+nav {
+    background-color: #F4722B;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: bold;
+    /* letter-spacing: 10px; */
+    text-decoration: none;
+    /* color: white; */
+    color: #F6E7C1;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: #3E3E3E;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+article#characters h2 {
+    text-align: center;
+}
+
+article#characters section {
+    overflow: hidden;
+    margin: 0 50px;
+    /* border: 1px solid; */
+}
+
+article#characters div#samurai {
+    width: 200px;
+    height: 250px;
+    /* border: 1px solid black; */
+    float: left;
+}
+
+article#characters div#fox {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid black; */
+    float: right;
+}
