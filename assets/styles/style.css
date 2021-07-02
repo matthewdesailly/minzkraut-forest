@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
@@ -16,11 +20,14 @@ header {
 }
 
 .jumbotron {
-    font-size: 30px;
     padding: 10px;
     background-color: #3E3E3E;
     text-align: center;
     color: #B3A78C;
+}
+
+.jumbotron h1 {
+    font-size: 60px;
 }
 
 .jumbotron p {
@@ -49,7 +56,6 @@ nav a {
     font-weight: bold;
     /* letter-spacing: 10px; */
     text-decoration: none;
-    /* color: white; */
     color: #F6E7C1;
     padding: 5px;
     border-radius: 5px;
@@ -72,26 +78,65 @@ main {
     margin-top: 20px;
 }
 
-article#characters h2 {
-    text-align: center;
-}
-
-article#characters section {
-    overflow: hidden;
-    margin: 0 50px;
+article#world {
     /* border: 1px solid; */
 }
 
-article#characters div#samurai {
-    width: 200px;
-    height: 250px;
+article#world h2 {
+    text-align: center;
+    font-size: 2em;
+    /* border: 1px solid; */
+}
+
+article#world section {
+    overflow: hidden;
+    /* margin: 0 50px; */
+    /* border: 1px solid; */
+}
+
+article#world h3,
+article#world p {
+    /* border: 1px solid; */
+}
+
+article#world div#forest {
+    width: 350px;
+    height: 400px;
     /* border: 1px solid black; */
     float: left;
 }
 
+article#characters {
+    /* border: 1px solid; */
+}
+
+article#characters h2 {
+    text-align: center;
+    font-size: 2em;
+    /* border: 1px solid; */
+}
+
+article#characters section {
+    overflow: hidden;
+    /* margin: 0 50px; */
+    /* border: 1px solid; */
+}
+
+article#characters div#samurai {
+    width: 300px;
+    height: 350px;
+    /* border: 1px solid black; */
+    float: left;
+}
+
+article#characters h3,
+article#characters p {
+    /* border: 1px solid; */
+}
+
 article#characters div#fox {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     /* border: 1px solid black; */
     float: right;
 }
