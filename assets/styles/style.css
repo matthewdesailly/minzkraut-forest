@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
+::-webkit-scrollbar {
+    width: .75em;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 * {
     box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,10 +35,10 @@ header {
 }
 
 .jumbotron {
-    padding: 10px;
     background-color: #3E3E3E;
-    text-align: center;
     color: #B3A78C;
+    text-align: center;
+    padding: 60px;
 }
 
 .jumbotron h1 {
@@ -31,44 +46,45 @@ header {
 }
 
 .jumbotron p {
-    margin-top: -20px;
     font-size: 20px;
     letter-spacing: 10px;
+    margin-top: -20px;
     /* font-style: italic; */
 }
 
 nav {
-    background-color: #F4722B;
+    background-color: rgba(244, 114, 43, .9);
+    text-align: center;
     padding: 10px;
     position: sticky;
     top: 0;
-    text-align: center;
 }
 
 nav li {
-    display: inline;
     list-style-type: none;
+    display: inline;
     margin: 20px;
 }
 
 nav a {
-    font-size: 18px;
-    font-weight: bold;
-    /* letter-spacing: 10px; */
     text-decoration: none;
     color: #F6E7C1;
-    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
     border-radius: 5px;
 }
 
 nav a:hover {
-    font-weight: bold;
     background-color: #3E3E3E;
+    font-weight: bold;
 }
 
 main {
-    padding: 20px;
     overflow: auto;
+    color: #3E3E3E;
+    padding: 20px;
+    /* background-color: #346751; */
 }
 
 .card {
@@ -78,65 +94,64 @@ main {
     margin-top: 20px;
 }
 
-article#world {
-    /* border: 1px solid; */
-}
-
 article#world h2 {
     text-align: center;
-    font-size: 2em;
-    /* border: 1px solid; */
+    font-size: 2.5em;
 }
 
 article#world section {
     overflow: hidden;
-    /* margin: 0 50px; */
-    /* border: 1px solid; */
-}
-
-article#world h3,
-article#world p {
-    /* border: 1px solid; */
+    margin-top: 50px;
 }
 
 article#world div#forest {
-    width: 350px;
-    height: 400px;
-    /* border: 1px solid black; */
     float: left;
+    margin-right: 50px;
 }
 
-article#characters {
-    /* border: 1px solid; */
+article#world .text-forest {
+    text-align: justify;
+    padding-right: 100px;
+}
+
+article#world .text-forest h3 {
+    font-size: 1.5em;
 }
 
 article#characters h2 {
     text-align: center;
-    font-size: 2em;
-    /* border: 1px solid; */
+    font-size: 2.5em;
 }
 
 article#characters section {
     overflow: hidden;
-    /* margin: 0 50px; */
-    /* border: 1px solid; */
+    margin-top: 50px;
 }
 
 article#characters div#samurai {
-    width: 300px;
-    height: 350px;
-    /* border: 1px solid black; */
     float: left;
+    margin-right: 50px;
 }
 
-article#characters h3,
-article#characters p {
-    /* border: 1px solid; */
+article#characters .text-samurai {
+    text-align: justify;
+    padding-right: 80px;
+}
+
+article#characters .text-samurai h3 {
+    font-size: 1.5em;
 }
 
 article#characters div#fox {
-    width: 300px;
-    height: 300px;
-    /* border: 1px solid black; */
     float: right;
+    margin-left: 50px;
+}
+
+article#characters .text-fox {
+    text-align: justify;
+    padding-left: 80px;
+}
+
+article#characters .text-fox h3 {
+    font-size: 1.5em;
 }

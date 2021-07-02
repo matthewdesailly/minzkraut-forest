@@ -76,6 +76,7 @@ function loadSamurai() {
     loader.load('assets/models/samurai.gltf', (gltf) => {
         modelSamurai = gltf.scene;
         modelSamurai.scale.set(100, 100, 100);
+        modelSamurai.rotation.y = Math.PI / 10;
 
         // Animations
         mixerSamurai = new THREE.AnimationMixer(modelSamurai);
@@ -123,6 +124,7 @@ function loadFox() {
     loader.load('assets/models/fox.gltf', (gltf) => {
         modelFox = gltf.scene;
         modelFox.scale.set(100, 100, 100);
+        modelFox.rotation.y = -Math.PI / 6.5;
 
         // Animations
         mixerFox = new THREE.AnimationMixer(modelFox);
