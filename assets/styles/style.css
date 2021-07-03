@@ -38,18 +38,37 @@ header {
     background-color: #3E3E3E;
     color: #B3A78C;
     text-align: center;
-    padding: 60px;
+    padding: 100px;
 }
 
 .jumbotron h1 {
     font-size: 60px;
+    margin: 0 auto;
 }
 
 .jumbotron p {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 10px;
-    margin-top: -20px;
-    /* font-style: italic; */
+    font-style: italic;
+    margin: 0 auto;
+}
+
+.jumbotron h1 {
+    animation: fade-in 2.5s;
+}
+
+.jumbotron p {
+    animation: fade-in 5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }
 
 nav {
@@ -69,22 +88,21 @@ nav li {
 nav a {
     text-decoration: none;
     color: #F6E7C1;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5px 10px;
 }
 
-nav a:hover {
-    background-color: #3E3E3E;
-    font-weight: bold;
+nav a:hover,
+.on-article {
+    border-bottom: 2px solid;
+    font-size: 18px;
 }
 
 main {
     overflow: auto;
     color: #3E3E3E;
     padding: 20px;
-    /* background-color: #346751; */
 }
 
 .card {
@@ -92,6 +110,13 @@ main {
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
+}
+
+article#world {
+    /* background-image: url('/assets/images/blob (1).svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom; */
 }
 
 article#world h2 {
@@ -111,7 +136,7 @@ article#world div#forest {
 
 article#world .text-forest {
     text-align: justify;
-    padding-right: 100px;
+    padding: 0 100px;
 }
 
 article#world .text-forest h3 {
@@ -130,12 +155,12 @@ article#characters section {
 
 article#characters div#samurai {
     float: left;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 article#characters .text-samurai {
     text-align: justify;
-    padding-right: 80px;
+    padding: 0 80px;
 }
 
 article#characters .text-samurai h3 {
@@ -144,12 +169,12 @@ article#characters .text-samurai h3 {
 
 article#characters div#fox {
     float: right;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 article#characters .text-fox {
     text-align: justify;
-    padding-left: 80px;
+    padding: 0 80px;
 }
 
 article#characters .text-fox h3 {
