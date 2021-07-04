@@ -16,8 +16,6 @@
     background: #555;
 }
 
-.cursor {}
-
 * {
     box-sizing: border-box;
 }
@@ -115,7 +113,7 @@ main {
 .flex-row {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 .box-left {
@@ -147,6 +145,10 @@ main {
     margin-top: 20px;
 }
 
+article#world div#forest {
+    overflow: hidden;
+}
+
 article#world h2 {
     text-align: center;
     font-size: 2.5em;
@@ -166,6 +168,10 @@ article#world .text-forest h3 {
     font-size: 1.5em;
 }
 
+article#characters div#samurai {
+    overflow: hidden;
+}
+
 article#characters h2 {
     text-align: center;
     font-size: 2.5em;
@@ -183,6 +189,10 @@ article#characters .text-samurai {
 
 article#characters .text-samurai h3 {
     font-size: 1.5em;
+}
+
+article#characters div#fox {
+    overflow: hidden;
 }
 
 article#characters .text-fox {
@@ -266,4 +276,37 @@ footer {
 
 footer span {
     color: #F4722B;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .box-left,
+    .box-right {
+        width: 100%;
+        padding: 0;
+        flex: 100%;
+    }
+
+    .jumbotron,
+    nav {
+        text-align: unset;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    article#characters section.reverse {
+        flex-direction: column-reverse;
+    }
+
+    aside#creator section.box-right {
+        overflow-x: auto;
+    }
 }

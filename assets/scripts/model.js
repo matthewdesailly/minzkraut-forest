@@ -2,7 +2,7 @@ let sceneForest, rendererForest, cameraForest;
 let modelForest;
 
 function loadForest() {
-    const width = 350,
+    const width = 300,
         height = 400;
 
     sceneForest = new THREE.Scene();
