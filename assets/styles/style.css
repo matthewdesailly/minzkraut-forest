@@ -16,6 +16,8 @@
     background: #555;
 }
 
+.cursor {}
+
 * {
     box-sizing: border-box;
 }
@@ -54,11 +56,11 @@ header {
 }
 
 .jumbotron h1 {
-    animation: fade-in 2.5s;
+    animation: fade-in 2.5s ease-in;
 }
 
 .jumbotron p {
-    animation: fade-in 5s;
+    animation: fade-in 5s ease-in-out;
 }
 
 @keyframes fade-in {
@@ -105,38 +107,59 @@ main {
     padding: 20px;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.box-left {
+    flex-basis: 25%;
+}
+
+.box-right {
+    flex-basis: 75%;
+}
+
+.box-left-reverse {
+    flex-basis: 75%;
+}
+
+.box-right-reverse {
+    flex-basis: 25%;
+}
+
+.highlight {
+    border-bottom: 4px solid #F4722B;
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
 }
 
-article#world {
-    /* background-image: url('/assets/images/blob (1).svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right bottom; */
-}
-
 article#world h2 {
     text-align: center;
     font-size: 2.5em;
+    margin: 0 auto;
 }
 
 article#world section {
-    overflow: hidden;
     margin-top: 50px;
-}
-
-article#world div#forest {
-    float: left;
-    margin-right: 50px;
 }
 
 article#world .text-forest {
     text-align: justify;
-    padding: 0 100px;
+    padding: 0 50px;
 }
 
 article#world .text-forest h3 {
@@ -146,37 +169,101 @@ article#world .text-forest h3 {
 article#characters h2 {
     text-align: center;
     font-size: 2.5em;
+    margin: 0 auto;
 }
 
 article#characters section {
-    overflow: hidden;
     margin-top: 50px;
-}
-
-article#characters div#samurai {
-    float: left;
-    margin-right: 40px;
 }
 
 article#characters .text-samurai {
     text-align: justify;
-    padding: 0 80px;
+    padding: 0 50px;
 }
 
 article#characters .text-samurai h3 {
     font-size: 1.5em;
 }
 
-article#characters div#fox {
-    float: right;
-    margin-left: 40px;
-}
-
 article#characters .text-fox {
     text-align: justify;
-    padding: 0 80px;
+    padding: 0 50px;
 }
 
 article#characters .text-fox h3 {
     font-size: 1.5em;
+}
+
+aside#creator h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0 auto;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile figcaption {
+    font-weight: bold;
+}
+
+.profile figcaption span {
+    color: #F4722B;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+aside#creator section {
+    padding-left: 40px;
+}
+
+aside#creator section h3 {
+    font-size: 1.5em;
+    width: fit-content;
+}
+
+aside#creator section h3:hover {
+    color: #F4722B;
+}
+
+aside#creator section h3::after {
+    content: ' Enthusiast';
+    color: #3E3E3E;
+}
+
+table {
+    text-align: left;
+    font-size: 1.1em;
+}
+
+table td,
+table th {
+    padding-bottom: 15px;
+}
+
+table td {
+    padding-left: 50px;
+}
+
+table td a {
+    color: #F4722B;
+}
+
+table td a:hover {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #3E3E3E;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+footer span {
+    color: #F4722B;
 }

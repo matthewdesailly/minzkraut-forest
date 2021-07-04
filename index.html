@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/images/sword.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/sword.png?v=1" type="image/x-icon">
     <title>LOTMF</title>
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
@@ -25,28 +25,24 @@
     </header>
     <main>
         <div id="content">
-            <article id="world" class="card">
-                <h2>WORLD</h2>
-                <section>
-                    <div id="forest"></div>
-                    <div class="text-forest">
+            <article id="world" class="flex-column card">
+                <h2 class="target-highlight">WORLD</h2>
+                <section class="flex-row profile card">
+                    <div id="forest" class="box-left"></div>
+                    <div class="text-forest box-right">
                         <h3>Minzkraut Forest</h3>
                         <p>
                             Dari generasi ke generasi, legenda mengenai Hutan Minzkraut sudah diceritakan secara
                             turun-temurun. Konon, hutan itu memiliki banyak sekali jenis makhluk hidup yang tinggal
                             berdampingan di dalamnya.
 
-                            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto
                             exercitationem,
                             tenetur vero dignissimos, dolor ipsum, error consequatur corrupti accusamus alias dolores
                             modi
                             esse? Non ea sed blanditiis ducimus nisi! Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Fuga dolore, nostrum pariatur illum iusto eligendi minima tempora temporibus quod at
-                            facilis sed, voluptatum cumque itaque aut incidunt cum nam recusandae? Lorem ipsum dolor sit
-                            amet consectetur adipisicing elit. Impedit earum eos natus autem recusandae delectus
-                            expedita
-                            quasi quisquam accusamus optio distinctio rem atque qui aut enim, repellat quis saepe
-                            doloremque. -->
+                            facilis sed, voluptatum cumque itaque aut incidunt cum nam recusandae?
                         </p>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate,
@@ -62,11 +58,12 @@
                     </div>
                 </section>
             </article>
-            <article id="characters" class="card">
-                <h2>CHARACTERS</h2>
-                <section>
-                    <div id="samurai"></div>
-                    <div class="text-samurai">
+
+            <article id="characters" class="flex-column card">
+                <h2 class="target-highlight">CHARACTERS</h2>
+                <section class="flex-row profile card">
+                    <div id="samurai" class="box-left"></div>
+                    <div class="text-samurai box-right">
                         <h3>Markidak, The Samurai</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto
@@ -91,9 +88,8 @@
                         </p>
                     </div>
                 </section>
-                <section>
-                    <div id="fox"></div>
-                    <div class="text-fox">
+                <section class="flex-row profile card">
+                    <div class="text-fox box-left-reverse">
                         <h3>Caita, The Fox</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto
@@ -115,23 +111,66 @@
                             dolor unde.
                         </p>
                     </div>
+                    <div id="fox" class="box-right-reverse"></div>
                 </section>
             </article>
         </div>
 
-        <aside>
+        <aside id="creator" class="flex-column card">
+            <h2 class="target-highlight">CREATOR</h2>
+            <article class="flex-row profile card">
+                <header class="box-left">
+                    <figure>
+                        <img src="assets/images/matthewdesailly.jpg">
+                        <figcaption><span>Ma</span>tthew <span>De</span>sailly</figcaption>
+                    </figure>
+                </header>
+                <section class="box-right">
+                    <h3>Web Developer</h3>
+                    <table>
+                        <tr>
+                            <th>Asal</th>
+                            <td>Kabupaten Karawang, Jawa Barat</td>
+                        </tr>
+                        <tr>
+                            <th>Universitas</th>
+                            <td>Universitas Kristen Maranatha</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>matthewdesaillyinc@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>LinkedIn</th>
+                            <td>
+                                <a href="https://www.linkedin.com/in/matthewdesailly/" target="_blank">
+                                    /matthewdesailly
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>GitHub</th>
+                            <td>
+                                <a href="https://github.com/matthewdesailly" target="_blank">
+                                    /matthewdesailly
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
         </aside>
     </main>
 
-    <!-- <footer>
-        
-    </footer>  -->
+    <footer>
+        <p>&#169; Copyright <span>made</span> 2021</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/three@0.115/build/three.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.115/examples/js/loaders/GLTFLoader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.115/examples/js/controls/OrbitControls.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/scripts/navbar.js"></script>
+    <script src="assets/scripts/scroll.js"></script>
     <script src="assets/scripts/model.js"></script>
 </body>
 
