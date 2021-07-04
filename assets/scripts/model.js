@@ -63,7 +63,7 @@ function loadSamurai() {
     rendererSamurai.setSize(width, height);
 
     cameraSamurai = new THREE.PerspectiveCamera(75, width / height, 1, 1000);
-    cameraSamurai.position.set(0, 90, 160);
+    cameraSamurai.position.set(0, 80, 160);
 
     // Create Lights
     const ambientLight = new THREE.AmbientLight(0xffffff, .2);

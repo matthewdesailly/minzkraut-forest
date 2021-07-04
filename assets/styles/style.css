@@ -30,6 +30,10 @@ body {
     padding: 0;
 }
 
+span {
+    color: #F4722B;
+}
+
 header {
     display: inline;
 }
@@ -218,10 +222,6 @@ aside#creator h2 {
     font-weight: bold;
 }
 
-.profile figcaption span {
-    color: #F4722B;
-}
-
 .profile img {
     height: 250px;
     border-radius: 10px;
@@ -272,10 +272,6 @@ footer {
     color: #f1f1f1;
     text-align: center;
     padding: 10px;
-}
-
-footer span {
-    color: #F4722B;
 }
 
 @media screen and (max-width: 1000px) {
