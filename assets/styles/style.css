@@ -302,6 +302,10 @@ footer span {
         display: inline-block;
     }
 
+    div#content h3 {
+        text-align: center;
+    }
+
     article#characters section.reverse {
         flex-direction: column-reverse;
     }
