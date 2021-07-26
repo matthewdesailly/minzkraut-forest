@@ -40,6 +40,8 @@ header {
 
 .jumbotron {
     background-color: #3E3E3E;
+    object-fit: fill;
+    width: 100%;
     color: #B3A78C;
     text-align: center;
     padding: 100px;
@@ -48,6 +50,7 @@ header {
 .jumbotron h1 {
     font-size: 60px;
     margin: 0 auto;
+    animation: fade-in 2.5s ease-in;
 }
 
 .jumbotron p {
@@ -55,13 +58,6 @@ header {
     letter-spacing: 10px;
     font-style: italic;
     margin: 0 auto;
-}
-
-.jumbotron h1 {
-    animation: fade-in 2.5s ease-in;
-}
-
-.jumbotron p {
     animation: fade-in 5s ease-in-out;
 }
 
